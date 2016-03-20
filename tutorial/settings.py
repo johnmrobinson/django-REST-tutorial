@@ -39,6 +39,10 @@ INSTALLED_APPS = (
     'snippets.apps.SnippetsConfig',
 )
 
+REST_FRAMEWORK = {
+    'PAGE_SIZE': 10
+}
+
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
